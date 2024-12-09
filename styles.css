@@ -1,0 +1,457 @@
+body {
+    background-color: #071224;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.fade-in {
+    animation: fadeIn 0.7s ease-out;
+}
+
+.fade-in-element {
+    animation: fadeIn 0.9s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.menu, .rules, .game {
+    background-color: #052260;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 12px 30px rgba(193, 184, 184, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    width: 90%;
+    text-align: center;
+    background-color: #1a3967;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+.level-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.level-buttons button {
+    background-color: #254880;
+    padding: 20px;
+    width: 12rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.level-buttons button.active {
+    background-color: #339989;
+}
+
+button {
+    background-color: #3da2a3;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    width: 12rem;
+    font-weight: bold;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #46b9b1;
+    transform: translateY(-3px);
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.hidden {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#playerName {
+    font-weight: bold;
+    color: #6ee7d6;
+}
+
+#timer {
+    color: #f76c6c;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container[data-size='5'] {
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
+}
+
+.container[data-size='7'] {
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: repeat(7, 70px);
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border: none;
+}
+
+#game {
+    width: auto;
+    max-width: 100%;
+    margin-top: 20px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#rules {
+    text-align: center;
+    width: auto;
+    font-size: 1.5rem;
+}
+
+.game-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* STATUS MESSAGE */
+.status-message {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    height: 1.5rem;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.fade-in-message {
+    opacity: 1;
+    animation: fadeInMessage 0.5s forwards;
+}
+
+@keyframes fadeInMessage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#validateGameBtn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#validateGameBtn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.modal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #052260;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    width: 400px;
+    max-width: 80%;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.completion-message {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #6ee7d6;
+}
+
+.time-taken-message {
+    font-size: 1.2rem;
+    color: #f76c6c;
+    margin-bottom: 30px;
+}
+
+#goBackBtn {
+    background-color: #3da2a3;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#goBackBtn:hover {
+    background-color: #46b9b1;
+    transform: translateY(-3px);
+}
+
+
+#leaderboardModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#leaderboardModal.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#leaderboardContent {
+    background-color: #052260;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+.leaderboard-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #6ee7d6;
+}
+
+
+
+
+
+
+
+
+
+
+
+.empty {
+    background-image: url('./pics/tiles/empty.png');
+}
+
+.water {
+    background-image: url('./pics/tiles/oasis.png');
+}
+
+.mountain {
+    background-image: url('./pics/tiles/mountain.png');
+}
+
+.mountain_90 {
+    background-image: url('./pics/tiles/mountain.png');
+    transform: rotate(90deg);
+}
+
+.mountain_180 {
+    background-image: url('./pics/tiles/mountain.png');
+    transform: rotate(180deg);
+}
+
+.mountain_270 {
+    background-image: url('./pics/tiles/mountain.png');
+    transform: rotate(270deg);
+}
+
+.vertical_bridge {
+    background-image: url('./pics/tiles/bridge.png');
+}
+
+.horizontal_bridge {
+    background-image: url('./pics/tiles/bridge.png');
+    transform: rotate(90deg);
+}
+
+
+
+.tile_with {
+    background-image: url('./pics/tiles/straight_rail.png');
+}
+
+.rotated_tile_with {
+    background-image: url('./pics/tiles/straight_rail.png');
+    transform: rotate(90deg);
+}
+
+.curve_tile{
+    background-image: url('./pics/tiles/curve_rail.png');
+}
+
+.curve_tile_90{
+    background-image: url('./pics/tiles/curve_rail.png');
+    transform: rotate(90deg);
+}
+
+.curve_tile_180{
+    background-image: url('./pics/tiles/curve_rail.png');
+    transform: rotate(180deg);
+}
+
+.curve_tile_270{
+    background-image: url('./pics/tiles/curve_rail.png');
+    transform: rotate(270deg);
+}
+
+.bridge_with_tile {
+    background-image: url('./pics/tiles/bridge_rail.png');
+}
+
+.vertical_bridge_with_tile {
+    background-image: url('./pics/tiles/bridge_rail.png');
+}
+
+.horizontal_bridge_with_tile {
+    background-image: url('./pics/tiles/bridge_rail.png');
+    transform: rotate(90deg);
+}
+
+.mountain_with_tile {
+    background-image: url('./pics/tiles/mountain_rail.png');
+}
+
+.mountain_90_with_tile {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(90deg);
+}
+
+.mountain_180_with_tile {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(180deg);
+}
+
+.mountain_270_with_tile {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(270deg);
+}
+
+
+
+/* OTHER RAILWAYS FOR EMPTY */
+.vertical_bridge_with_tile2 {
+    background-image: url('./pics/tiles/bridge_rail.png');
+}
+
+.horizontal_bridge_with_tile2 {
+    background-image: url('./pics/tiles/bridge_rail.png');
+    transform: rotate(90deg);
+}
+
+.mountain_with_tile2 {
+    background-image: url('./pics/tiles/mountain_rail.png');
+}
+
+.mountain_90_with_tile2 {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(90deg);
+}
+
+.mountain_180_with_tile2 {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(180deg);
+}
+
+.mountain_270_with_tile2 {
+    background-image: url('./pics/tiles/mountain_rail.png');
+    transform: rotate(270deg);
+}

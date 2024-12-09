@@ -1,0 +1,52 @@
+{
+    "easySolutions": [
+        [
+            ["curve_tile", "mountain_90_with_tile", "curve_tile", "curve_tile_90", "water"],
+            ["tile_with", "tile_with", "tile_with", "vertical_bridge_with_tile", "water"],
+            ["vertical_bridge_with_tile", "curve_tile_270", "mountain_180_with_tile", "curve_tile_270", "curve_tile_90"],
+            ["tile_with", "curve_tile", "curve_tile_90", "water", "tile_with"],
+            ["curve_tile_270", "curve_tile_180", "mountain_270_with_tile", "rotated_tile_with", "curve_tile_180"]
+        ],
+        [
+            ["water", "curve_tile", "horizontal_bridge_with_tile", "rotated_tile_with", "curve_tile_90"],
+            ["curve_tile", "mountain_180_with_tile", "curve_tile", "rotated_tile_with", "mountain_180_with_tile"],
+            ["vertical_bridge_with_tile", "water", "mountain_270_with_tile", "rotated_tile_with", "curve_tile_90"],
+            ["tile_with", "curve_tile", "curve_tile_90", "water", "tile_with"],
+            ["curve_tile_270", "curve_tile_180", "curve_tile_270", "rotated_tile_with", "curve_tile_180"]
+        ],
+        [
+            ["curve_tile", "rotated_tile_with", "horizontal_bridge_with_tile", "rotated_tile_with", "curve_tile_90"],
+            ["curve_tile_270", "curve_tile_90", "curve_tile", "curve_tile_90", "vertical_bridge_with_tile"],
+            ["curve_tile", "mountain_180_with_tile", "vertical_bridge_with_tile", "curve_tile_270", "curve_tile_180"],
+            ["tile_with", "water", "curve_tile_270", "rotated_tile_with", "curve_tile_90"],
+            ["curve_tile_270", "horizontal_bridge_with_tile", "rotated_tile_with", "rotated_tile_with", "mountain_180_with_tile"]
+        ],
+        [
+            ["curve_tile", "curve_tile_90", "curve_tile", "horizontal_bridge_with_tile", "curve_tile_90"],
+            ["tile_with", "curve_tile_270", "curve_tile_180", "curve_tile", "curve_tile_180"],
+            ["vertical_bridge_with_tile", "curve_tile", "mountain_90_with_tile", "curve_tile_270", "mountain_90_with_tile"],
+            ["tile_with", "tile_with", "curve_tile_270", "curve_tile_90", "tile_with"],
+            ["curve_tile_270", "curve_tile_180", "water", "mountain_270_with_tile", "curve_tile_180"]
+        ],
+        [
+            ["curve_tile", "rotated_tile_with", "horizontal_bridge_with_tile", "rotated_tile_with", "curve_tile_90"],
+            ["tile_with", "mountain_with_tile", "curve_tile_90", "curve_tile", "curve_tile_180"],
+            ["vertical_bridge_with_tile", "tile_with", "tile_with", "mountain_270_with_tile", "curve_tile_90"],
+            ["tile_with", "tile_with", "vertical_bridge_with_tile", "water", "tile_with"],
+            ["curve_tile_270", "mountain_180_with_tile", "curve_tile_270", "rotated_tile_with", "curve_tile_180"]
+        ]
+    ],
+
+    "hardSolutions": [
+        [
+            ["curve_tile", "mountain_90_with_tile", "water", "water", "curve_tile", "horizontal_bridge_with_tile", "curve_tile_180"],
+            ["vertical_bridge_with_tile", "tile_with", "curve_tile", "curve_tile_90", "tile_with", "curve_tile", "curve_tile_180"],
+            ["tile_with", "tile_with", "vertical_bridge_with_tile", "tile_with", "tile_with", "curve_tile_270", "curve_tile_90"],
+            ["tile_with", "curve_tile_270", "curve_tile_180", "mountain_270_with_tile", "curve_tile_180", "curve_tile", "curve_tile_180"],
+            ["mountain_270_with_tile", "rotated_tile_with", "mountain_90_with_tile", "curve_tile", "horizontal_bridge_with_tile", "curve_tile_180", "water"],
+            ["curve_tile", "rotated_tile_with", "curve_tile_180", "curve_tile_270", "rotated_tile_with", "rotated_tile_with", "curve_tile_90"],
+            ["curve_tile_270", "rotated_tile_with", "rotated_tile_with", "horizontal_bridge_with_tile", "rotated_tile_with", "rotated_tile_with", "curve_tile_180"]
+        ]
+      
+    ]
+}

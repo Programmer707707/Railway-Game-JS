@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Railway Puzzle Game</title>
+</head>
+<body>
+    <div id="menu" class="menu fade-in">
+        <h1><span>🚂</span> Railway Puzzle</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <div class="level-buttons fade-in-element">
+            <button id="easyBtn">Easy</button>
+            <button id="hardBtn">Hard</button>
+        </div>
+        <button id="startGameBtn" disabled class="fade-in-element">Start Game</button>
+        <button id="rulesBtn" class="fade-in-element">View Rules</button>
+        <button id="showLeaderboardBtn" class="fade-in-element">Leader Board</button>
+    </div>
+
+    <div id="leaderboardModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🏆 Leaderboard</h2>
+            <div id="leaderboardContent"></div>
+            <button id="closeLeaderboardBtn">Close</button>
+        </div>
+    </div>
+
+    <div id="rules" class="rules fade-in hidden">
+        <h2>Game Rules</h2>
+        <p>1. Connect all railway tiles to form a continuous loop.</p>
+        <p>2. Water tiles cannot be changed.</p>
+        <p>3. The game is complete when all railway tiles are properly connected.</p>
+        <button id="backToMenuBtn">Back to Menu</button>
+    </div>
+
+    <div id="game" class="game fade-in hidden">
+        <div class="header">
+            <span id="playerName">Player: </span>
+            <span id="timer">20:00</span>
+        </div>
+        <div>
+            <div class="status-message" id="statusMessage"></div>
+        </div>
+        <div class="container" id="gameContainer"></div>
+        <div class="game-btns">
+            <button id="validateGameBtn" class="fade-in-element">Validate Game</button>
+            <button id="saveGameBtn">Save Game</button>
+            <button id="deleteGameBtn">Delete Saved State</button>
+            <button id="backToMenuGameBtn">Back to Menu</button>
+        </div>
+    </div>
+
+
+    <div id="gameModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>🎉 Congratulations!</h2>
+            <p id="completionMessage" class="completion-message"></p>
+            <p id="timeTakenMessage" class="time-taken-message"></p>
+            <button id="goBackBtn">Go Back to Menu</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{
+    "hardMaps": [
+        [
+            ["empty", "mountain_90", "water", "water", "empty", "horizontal_bridge", "empty"],
+            ["vertical_bridge", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "vertical_bridge", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "mountain_270", "empty", "empty", "empty"],
+            ["mountain_270", "empty", "mountain_90", "empty", "horizontal_bridge", "empty", "water"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "horizontal_bridge", "empty", "empty", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "water", "empty", "empty", "empty", "empty"],
+            ["vertical_bridge", "empty", "horizontal_bridge", "empty", "empty", "mountain_180", "empty"],
+            ["empty", "empty", "horizontal_bridge", "empty", "empty", "empty", "vertical_bridge"],
+            ["mountain", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "water", "empty", "mountain_90", "empty", "empty", "empty"],
+            ["empty", "mountain", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "water", "empty", "empty", "empty", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "horizontal_bridge", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "horizontal_bridge"],
+            ["water", "empty", "mountain_270", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "water", "mountain_270", "empty", "horizontal_bridge", "empty", "empty"],
+            ["vertical_bridge", "empty", "empty", "empty", "empty", "mountain_90", "empty"],
+            ["empty", "empty", "water", "mountain_270", "empty", "empty", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "vertical_bridge", "empty", "mountain_180", "empty"],
+            ["empty", "empty", "mountain_270", "empty", "empty", "empty", "empty"],
+            ["empty", "horizontal_bridge", "empty", "water", "empty", "horizontal_bridge", "empty"],
+            ["empty", "empty", "mountain_180", "empty", "mountain_90", "empty", "empty"],
+            ["vertical_bridge", "empty", "empty", "empty", "empty", "mountain_270", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "mountain", "empty"],
+            ["empty", "horizontal_bridge", "horizontal_bridge", "empty", "mountain_90", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "mountain", "empty", "water", "empty", "empty"],
+            ["empty", "mountain_180", "empty", "vertical_bridge", "empty", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "empty", "empty", "empty"]
+        ]
+    ],
+
+    "easyMaps": [
+        [
+            ["empty", "mountain_90", "empty", "empty", "water"],
+            ["empty", "empty", "empty", "vertical_bridge", "water"],
+            ["vertical_bridge", "empty", "mountain_180", "empty", "empty"],
+            ["empty", "empty", "empty", "water", "empty"],
+            ["empty", "empty", "mountain_270", "empty", "empty"]
+        ],
+        
+        [
+            ["water", "empty", "horizontal_bridge", "empty", "empty"],
+            ["empty", "mountain_180", "empty", "empty", "mountain_180"],
+            ["vertical_bridge", "water", "mountain_270", "empty", "empty"],
+            ["empty", "empty", "empty", "water", "empty"],
+            ["empty", "empty", "empty", "empty", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "horizontal_bridge", "empty", "empty"],
+            ["empty", "empty", "empty", "empty", "vertical_bridge"],
+            ["empty", "mountain_180", "vertical_bridge", "empty", "empty"],
+            ["empty", "water", "empty", "empty", "empty"],
+            ["empty", "horizontal_bridge", "empty", "empty", "mountain_180"]
+        ],
+        
+        [
+            ["empty", "empty", "empty", "horizontal_bridge", "empty"],
+            ["empty", "empty", "empty", "empty", "empty"],
+            ["vertical_bridge", "empty", "mountain_90", "empty", "mountain_90"],
+            ["empty", "empty", "empty", "empty", "empty"],
+            ["empty", "empty", "water", "mountain_270", "empty"]
+        ],
+        
+        [
+            ["empty", "empty", "horizontal_bridge", "empty", "empty"],
+            ["empty", "mountain", "empty", "empty", "empty"],
+            ["vertical_bridge", "empty", "empty", "mountain_270", "empty"],
+            ["empty", "empty", "vertical_bridge", "water", "empty"],
+            ["empty", "mountain_180", "empty", "empty", "empty"]
+        ]
+    ]
+}
